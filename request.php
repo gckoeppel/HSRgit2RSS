@@ -11,16 +11,16 @@
 	<h1>HSRgit2RSS</h1>
 	<p>Show commits to the HSR git system (SCM Manager) in a RSS feed</p>
 	
-	<form action="grant.php" methor="post">
-	
+	<form method="get" action="grant.php">
 		<fieldset>
 		<legend>Fill in this Form to request a new feed</legend>
 		<label>name</label>
-		<input type="text" name="name" placeholder="Type something…">
+		<input type="text" name="name" placeholder="I will stalk you…">
 		<label>e-mail</label>
-		<input type="text" name="mail" placeholder="Type something…">
-		<label>Name of your Repo</label>
-		<input type="text" name="reponame" placeholder="Type something…">
+		<input type="text" name="mail" placeholder="For spamming purpose…">
+		<label>Name of your feed</label>
+		<input type="text" name="reponame" placeholder="A fancy, unique name…">
+		<!--TODO add warning-->
 		<button type="submit" class="btn">Submit</button>
 		</fieldset>
     </form>
