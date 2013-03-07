@@ -17,7 +17,7 @@
 		$mail = $_GET['mail'];
 		$reponame = $_GET['reponame'];
 
-		$xml = "feeds/{$reponame}.xml";
+		$xml = "feeds/{$reponame}.rss";
 
 		if(file_exists($xml))
 		{
@@ -94,12 +94,12 @@
 			echo "http://sound.vshsr.ch/MeineKraft/".$xml ?>
 			</pre>
 			
-			
 			<p>Go to your git repository on <a href="http://git.hsr.ch">git</a>  and add a new webhook with the following link:</p>
 			<pre>
 			<? //TODO Change
 			echo "http://sound.vshsr.ch/MeineKraft/append.php?rn=".$reponame ?>
 			</pre>	
+			<p>Do not forget to check the nice "on every commit" checkbox, otherwise you will not receive every commit!</p>
 			<!--TODO add warning-->			
 			<?php
 		}
