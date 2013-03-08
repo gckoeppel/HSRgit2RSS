@@ -97,7 +97,7 @@
 			<p>Go to your git repository on <a href="http://git.hsr.ch">git</a>  and add a new webhook with the following link:</p>
 			<pre>
 			<? //TODO Change
-			echo "http://sound.vshsr.ch/MeineKraft/append.php?fn=".$reponame."&rn=\${repository.name}&a=\${changeset.author.name&d=\${changeset.date}&id=\${changeset.id}&m=\${changeset.description}" ?>
+			echo "http://sound.vshsr.ch/MeineKraft/append.php?fn=".$reponame."&rn=\${repository.name}&a=\${changeset.author.name}&d=\${changeset.date}&id=\${changeset.id}&m=\${changeset.description}" ?>
 			</pre>	
 			<p>Do not forget to check the nice "on every commit" checkbox, otherwise you will not receive every commit!</p>
 			<!--TODO add warning-->			
