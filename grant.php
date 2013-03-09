@@ -100,7 +100,7 @@
 			echo "http://sound.vshsr.ch/MeineKraft/append.php?fn=".$reponame."&rn=\${repository.name}&a=\${changeset.author.name}&d=\${changeset.date}&id=\${changeset.id}&m=\${changeset.description}" ?>
 			</pre>	
 			<p>Do not forget to check the nice "on every commit" checkbox, otherwise you will not receive every commit!</p>
-			<!--TODO add warning-->			
+			<p class="text-warning">Important! By adding this line to your repo on SCM Manager, your commit messages will become public!</p>		
 			<?php
 		}
 	?>
