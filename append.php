@@ -31,5 +31,8 @@
 	$nChannel->appendChild($newNode);
 	$rss = $dom->saveXML();
 	file_put_contents($xml, $rss);
+	
+	
+	//echo $rss->saveXML() . "\n";
 
 ?>

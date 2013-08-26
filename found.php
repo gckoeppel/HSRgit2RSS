@@ -25,13 +25,13 @@
 			<p class="text-info">Copy this link into your feedereader to follow your new feed</p>
 			<pre>
 			<? //TODO Change
-			echo "http://sound.vshsr.ch/MeineKraft/".$xml ?>
+			echo "http://www.gianclaudio.ch/HSRgit2RSS/".$xml ?>
 			</pre>
 			
 			<p>Go to your git repository on <a href="http://git.hsr.ch">git</a>  and add a new webhook with the following link:</p>
 			<pre>
 			<? //TODO Change
-			echo "http://sound.vshsr.ch/MeineKraft/append.php?fn=".$reponame."&rn=\${repository.name}&a=\${changeset.author.name}&d=\${changeset.date}&id=\${changeset.id}&m=\${changeset.description}" ?>
+			echo "http://www.gianclaudio.ch/HSRgit2RSS/append.php?fn=".$reponame."&rn=\${repository.name}&a=\${changeset.author.name}&d=\${changeset.date}&id=\${changeset.id}&m=\${changeset.description}" ?>
 			</pre>	
 			<p>Do not forget to check the nice "on every commit" checkbox, otherwise you will not receive every commit!</p>
 			<p class="text-warning">Important! By adding this line to your repo on SCM Manager, your commit messages will become public!</p>
